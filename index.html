@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es,en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+         $(window).scroll(function() {
+           if ($(this).scrollTop() > 0) {
+             $('header nav').addClass('navbar-opaque');
+           } else {
+             $('header nav').removeClass('navbar-opaque');
+           }
+         });
+       });</script>
+      
+<section id="inicio">
+        <header class="header">
+         
+           <nav >
+                <div class="barra">
+             <a class=logo href="#inicio"><h2>NEXUS</h2></a>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a class="contacto__" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="navbar">  <!-- esto es el menu hamburguesa -->
+              <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                <div class="logotipe">
+                  <h1>NEXUS</h1>
+                </div>
+                <div class="menu-items"> 
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">blogs</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">contact</a></li>
+                </div>
+              </div>
+            </div>
+            </nav>  
+        
+        </header>
+        <h1 class="logo">¿Quieres que tu proyecto <br> cobre vida? </h2>
+        <p class="parrafo__inicio">Somos el nexo que te lo permite</p>
+            <div class="links--hero">
+            <a href="#portafolio" class="contacto--cta">Ver trabajos</a> 
+            <a href="#contacto" class="trabajos--cta">Contacto</a>
+        </div>
+    </section>
+
+    <section id="nosotros"> <!----------------------SECCION NOSOTROS------------------------------------------>
+        <h2 class="title__nosotros">Acerca de nosotros</h2>
+        <div class="about__">
+<figure class="imagen__about"><img src="1 VILA.jpg" alt="" srcset="" width="1204px" height="616px"></figure> 
+        <p class="paragraph__nosotros">Ofrecemos servicios de visualización arquitectónica
+           de alta calidad para proyectos de arquitectura, diseño de interiores 
+           y desarrollo inmobiliario. 
+           Nuestro equipo de profesionales altamente capacitados y con experiencia
+            en la industria se dedica a brindar soluciones de visualización personalizadas
+             y efectivas para nuestros clientes. Nos basamos en un enfoque colaborativo 
+             y creativo para cada proyecto, nos esforzamos por superar las expectativas
+            de nuestros clientes en cada oportunidad.</p>
+</div>
+<div class="caja-azul">  <p class="numero">2314623452</p>  <p class="email">Tmgroup@gmail.com</p></div>
+    </section>
+
+    <section class="section__servicios" id="servicios">  <!----------------------SECCION SERVICIOS------------------------------------------>
+        <h2 class="title__servicios">Servicios</h2>
+        <div class="CARTAS">
+        <div class="card">
+            <img src="por-imagen.png" alt="Visualización por imagen">
+            <div class="card-content">
+              <h2>Visualización por imagen</h2>
+              <p>Presentamos imágenes fotorrealistas de tus proyectos arquitectónicos para mostrar detalles precisos y atractivos. </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="por-video.png" alt="Visualización por video">
+            <div class="card-content">
+              <h2>Visualización por video</h2>
+              <p>Creamos animaciones en 3D que muestran tus proyectos desde diferentes ángulos y perspectivas, lo que brinda una experiencia envolvente y detallada. </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="por-360.png" alt="Visualización por 360">
+            <div class="card-content">
+              <h2>Visualización por 360</h2>
+              <p>Ofrecemos una experiencia interactiva en la que el usuario puede explorar su proyecto virtualmente desde cualquier ángulo y perspectiva para una visión completa.</p>
+            </div>
+          </div>
+        </div>
+    
+      <section id="contacto">
+        <h2 class="contacto__title">Contacto</h2>
+        <form class="form__contacto" id="form-contacto" action="enviar.php" method="post">
+          <div class="input-group">
+            <input type="text" class="form__input" name="nombre" placeholder="Nombre" required>
+            <input type="email" class="form__input" name="mail" placeholder="Correo electrónico" required>
+          </div>
+          <textarea name="mensaje" class="form__textarea"  placeholder="mensaje" required></textarea>
+          <button type="submit" class="form__button">Enviar</button>
+        </form>
+      </section>
+      
+
+      <footer>
+        <ul class="links__footer">
+          <li><a href="#inicio"><span>Inicio</span></a></li>
+          <li><a href="#"><span>Nosotros</span></a></li>
+          <li><a href="#"><span>Servicios</span></a></li>
+          <li><a href="#"><span>Trabajos</span></a></li>
+          <li><a href="#contacto"><span>Contacto</span></a></li>
+        </ul>
+        <div class="centro__footer">
+          <h4 class="tittle__footer">NEXUS</h4>
+          <p>Derechos reservados © 2023 Nexusarq</p>
+        </div>
+        <div class="redes">
+          <p class="redes__footer">Seguinos aca che</p>
+        </div>
+      </footer>
+      
+      
+</body>
+</html>
